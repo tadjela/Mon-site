@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* IMAGES RESPONSIVES */
+.img {
+    max-width: 100%;
+    margin-top: 50px;
+    border-radius: 50px 50px 50px 50px;
+    
+}
+
+.web {
+    width: 100%;
+    border-radius: 50px 50px 50px 50px;
+}
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: black;
+    padding: 30px;
+    align-items: center;
+}
+
+.logo {
+     font-weight: 700;
+}
+
+.log {
+    color: darkturquoise;
+}
+.span1 {
+    color: darkturquoise;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+a:hover {
+    color: aqua;
+}
+
+/* ================= SECTION ACCUEIL ================= */
+
+.section1 {
+    background-color: #ffffff;
+    padding-bottom: 80px;
+}
+
+.big-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box3 {
+    font-size: 25px;
+    margin-top: 80px;
+}
+
+.name {
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.a1 {
+    color: black;
+    background-color: darkturquoise;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    box-shadow: -2px 2px 3px rgb(48, 61, 71);
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.a1:hover {
+    color: #fff;
+    background-color: black;
+}
+
+/* ================= A PROPOS ================= */
+
+.section2 {
+    background-color: rgb(236, 234, 234);
+    padding: 70px 0;
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+    color: darkturquoise;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.nom {
+    color: darkturquoise;
+    font-size: 20px;
+}
+
+.a2 {
+    color: black;
+    background-color: darkturquoise;
+    border-radius: 8px;
+    padding: 10px 30px;
+    box-shadow: -2px 2px 3px rgb(48, 61, 71);
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.a2:hover {
+    color: #fff;
+    background-color: black;
+}
+
+/* ================= PROJETS ================= */
+
+.section3 {
+    padding: 70px 0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.bos1, .bos2, .bos3 {
+    background-color: rgb(236, 234, 234);
+    padding: 40px;
+    box-shadow: -2px 2px 3px rgb(48, 61, 71);
+    border-radius: 10px;
+}
+
+.a3 {
+    display: inline-block;
+    color: black;
+    background-color: darkturquoise;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.a3:hover {
+    color: #fff;
+    background-color: black;
+}
+
+/* ================= COMPETENCES ================= */
+
+.section4 {
+    background-color: rgb(236, 234, 234);
+    padding: 70px 0;
+}
+
+.big-boxa {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.boxa1, .boxa2 {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: -2px 2px 3px rgb(48, 61, 71);
+    border-radius: 10px;
+    width: 40%;
+}
+
+.progress {
+    height: 8px;
+    background-color: darkturquoise;
+    border-radius: 10px;
+}
+
+/* ================= CONTACT ================= */
+
+.section5 {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 70px 0;
+    color: #fff;
+}
+
+.input {
+    display: flex;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.ol {
+    color: darkturquoise;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: darkturquoise;
+    border: none;
+    margin-top: 10px;
+}
+
+/* ================= FOOTER ================= */
+
+.section6 {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .big-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bos1, .bos2, .bos3 {
+        width: 90%;
+    }
+
+    .big-boxa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxa1, .boxa2 {
+        width: 90%;
+    }
+
+    .input {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
